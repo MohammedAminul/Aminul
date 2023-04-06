@@ -16,10 +16,15 @@ public class hometest extends setupselenium {
         }
               @Test
         void topdealtest(){
+
             String Actualtest = home.topdealtext();
+            System.out.println(Actualtest);
 
             Assert.assertEquals(Actualtest,"Top Deal");
-        }
+        }@Test
+    void carttest(){
+        carttest();
+    }
 
     }
 
